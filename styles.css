@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background: #fff;
 }
 
 .container {
@@ -17,229 +18,382 @@ body {
 }
 
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
 }
 
 header h1 {
-    display: inline-block;
-    margin-right: 2rem;
-    font-size: 1.8rem;
-}
-
-nav ul {
-    list-style: none;
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1.5rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #3498db;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .hero {
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.services {
+    padding: 3rem 0;
+    background: #f8f9fa;
 }
 
-.promo-box {
-    background: rgba(255,255,255,0.15);
+.service-box {
+    background: white;
     padding: 2rem;
-    margin: 2rem auto;
-    max-width: 600px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+}
+
+.service-box h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .price {
-    font-size: 2.5rem;
-    color: #f1c40f;
+    font-size: 2rem;
+    color: #e74c3c;
     font-weight: bold;
     margin: 1rem 0;
 }
 
-.products {
-    padding: 4rem 0;
+.guarantee {
+    color: #27ae60;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.promo {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.flood-consequences {
+    padding: 3rem 0;
+    background: white;
+}
+
+.flood-consequences h2 {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.consequences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.consequence-item {
+    padding: 1.5rem;
+    background: #fff5f5;
+    border-radius: 10px;
+    border-left: 4px solid #e74c3c;
+}
+
+.consequence-item h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.flood-causes {
+    padding: 3rem 0;
     background: #f8f9fa;
 }
 
-.products h2 {
+.flood-causes h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.2rem;
     color: #2c3e50;
+    margin-bottom: 2rem;
 }
 
-.product-grid {
+.causes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cause-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 3px solid #3498db;
+    font-weight: 500;
+}
+
+.warning-text {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 2rem;
+}
+
+.system-title {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+}
+
+.system-title h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: #3498db;
+}
+
+.system-title h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.how-it-works {
+    padding: 3rem 0;
+    background: white;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+.steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.product-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.product-card h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.about {
-    padding: 4rem 0;
-    background: white;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.2rem;
-    color: #2c3e50;
-}
-
-.how-it-works {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
 .step {
-    text-align: center;
-    padding: 1.5rem;
     background: #f8f9fa;
+    padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid #3498db;
 }
 
-.step h3 {
+.step-detail {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+.equipment-scheme {
+    padding: 3rem 0;
+    background: #f8f9fa;
+}
+
+.equipment-scheme h2 {
+    text-align: center;
     color: #2c3e50;
+}
+
+.expert-contact {
+    padding: 3rem 0;
+    background: #e74c3c;
+    color: white;
+    text-align: center;
+}
+
+.expert-contact h2 {
     margin-bottom: 1rem;
 }
 
+.expert-contact p {
+    font-size: 1.2rem;
+}
+
 .benefits {
-    padding: 4rem 0;
-    background: #f8f9fa;
+    padding: 3rem 0;
+    background: white;
 }
 
 .benefits h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.2rem;
     color: #2c3e50;
+    margin-bottom: 3rem;
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .benefit-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 3px solid #27ae60;
+}
+
+.pricing {
+    padding: 3rem 0;
+    background: #f8f9fa;
+}
+
+.pricing h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.pricing-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.popular-products {
+    padding: 3rem 0;
     background: white;
+    text-align: center;
+}
+
+.popular-products h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.order-now {
+    padding: 3rem 0;
+    background: #27ae60;
+    color: white;
+}
+
+.order-now h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.order-benefits p {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.professional-choice {
+    padding: 3rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.professional-choice h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.technical-specs {
+    padding: 3rem 0;
+    background: white;
+}
+
+.technical-specs h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.spec-item {
+    background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.3s;
 }
 
-.benefit-item:hover {
-    transform: translateY(-3px);
+.spec-item h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
 }
 
-.contact {
-    padding: 4rem 0;
-    background: white;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.2rem;
-    color: #2c3e50;
-}
-
-.contact-info {
-    text-align: center;
+.comparison-table {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-info p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.comparison-table th {
+    background: #3498db;
+    color: white;
+}
+
+.reliability {
+    padding: 3rem 0;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.reliability h2 {
+    font-size: 2rem;
 }
 
 footer {
-    background: #2c3e50;
+    background: #1a252f;
     color: white;
     text-align: center;
     padding: 2rem 0;
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
     header h1 {
-        display: block;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-    
-    nav ul li {
-        display: inline-block;
-        margin: 0 0.5rem;
+        font-size: 1.5rem;
     }
     
     .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .system-title h1 {
         font-size: 2rem;
     }
     
-    .product-grid,
-    .how-it-works,
-    .benefits-grid {
+    .consequences-grid,
+    .benefits-grid,
+    .specs-grid {
         grid-template-columns: 1fr;
     }
 }
