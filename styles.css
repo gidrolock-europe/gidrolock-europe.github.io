@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
@@ -18,94 +14,147 @@ body {
     padding: 0 20px;
 }
 
-/* Заглавие като на оригинала */
-.site-header {
+/* Горна навигация */
+.top-navigation {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.top-navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #3498db;
+}
+
+/* Главен хедър */
+.main-header {
     background: #fff;
     padding: 2rem 0;
     text-align: center;
     border-bottom: 3px solid #3498db;
 }
 
-.site-header h1 {
+.site-title {
     color: #2c3e50;
     font-size: 2.2rem;
     font-weight: bold;
 }
 
-/* Главна секция със син фон */
-.hero-section {
+/* Голяма синя секция */
+.hero-blue-section {
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
-    padding: 3rem 0;
+    padding: 4rem 0;
     text-align: center;
 }
 
-.hero-section h2 {
-    font-size: 1.8rem;
+.main-message {
+    font-size: 1.9rem;
     line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-/* Секции за услуги */
-.service-section {
-    padding: 3rem 0;
-    background: #f8f9fa;
+/* Промо секции */
+.promo-section {
+    padding: 4rem 0;
 }
 
-.service-section h3 {
+.promo-box {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+}
+
+.promo-section h3 {
     color: #2c3e50;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
 
-.price {
-    font-size: 2.5rem;
+.price-tag {
+    font-size: 3rem;
     color: #e74c3c;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
-.guarantee {
+.promo-description {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.guarantee-badge {
     color: #27ae60;
     font-weight: bold;
     font-style: italic;
-    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
-.promo {
+.promo-badge {
     color: #e74c3c;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
 }
 
-/* Секция за наводнения */
-.flood-section {
-    padding: 3rem 0;
-    background: white;
+.ac-promo {
+    background: #f8f9fa;
 }
 
-.flood-section h2 {
+.heat-pump-promo {
+    background: #fff;
+}
+
+/* Последици от наводнение */
+.consequences-section {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.section-title-red {
     text-align: center;
     color: #e74c3c;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-bottom: 3rem;
 }
 
-.flood-grid {
+.consequences-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.flood-item {
-    padding: 2rem;
+.consequence-card {
     background: #fff5f5;
+    padding: 2.5rem;
     border-radius: 10px;
     border-left: 4px solid #e74c3c;
 }
 
-.flood-item h3 {
+.consequence-card h3 {
     color: #e74c3c;
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -113,24 +162,25 @@ body {
 
 /* Причини за наводнение */
 .causes-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: #f8f9fa;
 }
 
-.causes-section h2 {
+.section-title {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 2rem;
+    font-size: 1.9rem;
 }
 
-.causes-list {
+.causes-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.cause-item {
+.cause-box {
     background: white;
     padding: 1.5rem;
     border-radius: 5px;
@@ -139,7 +189,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.warning {
+.warning-text {
     text-align: center;
     font-style: italic;
     color: #7f8c8d;
@@ -147,53 +197,52 @@ body {
     font-size: 1.1rem;
 }
 
-/* Система GIDROLOCK */
-.system-title-section {
-    padding: 3rem 0;
+/* Системна секция */
+.system-main-section {
+    padding: 4rem 0;
     background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
     text-align: center;
 }
 
-.system-title-section h1 {
-    font-size: 3.5rem;
+.system-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.system-title {
+    font-size: 4rem;
     margin: 1rem 0;
     color: #3498db;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.system-title-section h2 {
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
 /* Как работи */
-.how-it-works-section {
-    padding: 3rem 0;
+.how-it-works {
+    padding: 4rem 0;
     background: white;
 }
 
-.how-it-works-section h2 {
+.how-it-works .section-title {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 3rem;
-    font-size: 2rem;
 }
 
-.work-steps {
+.steps-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.step {
+.step-box {
     background: #f8f9fa;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 10px;
     border-left: 4px solid #3498db;
 }
 
-.step-note {
+.step-detail {
     font-style: italic;
     color: #7f8c8d;
     margin-top: 0.5rem;
@@ -201,41 +250,35 @@ body {
 
 /* Схема */
 .scheme-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: #f8f9fa;
 }
 
-.scheme-section h2 {
+.scheme-placeholder {
+    background: #e9ecef;
+    padding: 4rem;
     text-align: center;
-    color: #2c3e50;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 
-/* Експерт */
-.expert-section {
-    padding: 3rem 0;
+/* Експерт контакт */
+.expert-contact-section {
+    padding: 4rem 0;
     background: #e74c3c;
     color: white;
     text-align: center;
 }
 
-.expert-section h2 {
-    margin-bottom: 1rem;
-}
-
-.expert-section p {
-    font-size: 1.3rem;
+.contact-call {
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 /* Преимущества */
-.benefits-section {
-    padding: 3rem 0;
+.benefits-main-section {
+    padding: 4rem 0;
     background: white;
-}
-
-.benefits-section h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 3rem;
 }
 
 .benefits-list {
@@ -244,104 +287,88 @@ body {
     gap: 1rem;
 }
 
-.benefit {
+.benefit-item {
     background: #f8f9fa;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 5px;
     border-left: 3px solid #27ae60;
 }
 
 /* Цени */
 .pricing-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: #f8f9fa;
 }
 
-.pricing-section h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-}
-
-.pricing-text {
+.pricing-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.pricing-text p {
-    margin-bottom: 1.5rem;
+.pricing-content p {
+    margin-bottom: 2rem;
     line-height: 1.8;
     text-align: center;
 }
 
 /* Популярни продукти */
 .popular-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: white;
     text-align: center;
 }
 
-.popular-section h2 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
+.delivery-text {
+    color: #3498db;
+    font-weight: bold;
+    margin: 0.5rem 0;
 }
 
 /* Поръчка */
 .order-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: #27ae60;
     color: white;
 }
 
-.order-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.order-list p {
+.order-benefits p {
     margin-bottom: 1rem;
     padding-left: 2rem;
 }
 
 /* Професионален избор */
-.professional-section {
-    padding: 3rem 0;
+.professional-choice-section {
+    padding: 4rem 0;
     background: #f8f9fa;
     text-align: center;
 }
 
-.professional-section h2 {
+.professional-text {
+    font-size: 1.2rem;
     color: #2c3e50;
-    margin-bottom: 1rem;
 }
 
 /* Технически данни */
 .tech-specs-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: white;
 }
 
-.tech-specs-section h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-}
-
-.specs-comparison {
+.specs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
-.spec-group {
+.spec-item {
     background: #f8f9fa;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 10px;
     text-align: center;
 }
 
-.spec-group h3 {
+.spec-item h3 {
     color: #3498db;
     margin-bottom: 1rem;
 }
@@ -358,7 +385,7 @@ body {
 
 .comparison-table th,
 .comparison-table td {
-    padding: 1rem;
+    padding: 1.2rem;
     border: 1px solid #ddd;
     text-align: center;
 }
@@ -370,22 +397,26 @@ body {
 
 /* Надеждност */
 .reliability-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: #2c3e50;
     color: white;
     text-align: center;
 }
 
 .reliability-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 /* Футър */
-.site-footer {
+.main-footer {
     background: #1a252f;
     color: white;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
+}
+
+.copyright {
+    font-size: 0.9rem;
 }
 
 /* Адаптивен дизайн */
@@ -394,18 +425,22 @@ body {
         padding: 0 15px;
     }
     
-    .site-header h1 {
+    .site-title {
         font-size: 1.8rem;
     }
     
-    .system-title-section h1 {
-        font-size: 2.5rem;
+    .system-title {
+        font-size: 3rem;
     }
     
-    .flood-grid,
-    .work-steps,
+    .main-message {
+        font-size: 1.5rem;
+    }
+    
+    .consequences-grid,
+    .steps-container,
     .benefits-list,
-    .specs-comparison {
+    .specs-container {
         grid-template-columns: 1fr;
     }
 }
