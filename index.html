@@ -7,72 +7,103 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Заглавие като на оригинала -->
-    <header class="site-header">
+
+    <!-- Горна навигационна лента като на оригинала -->
+    <nav class="top-navigation">
         <div class="container">
-            <h1>Система за защита от протичане на вода GIDROLOCK</h1>
+            <div class="nav-left">
+                <a href="/" class="logo-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='50' viewBox='0 0 150 50'%3E%3Crect width='150' height='50' fill='%233498db'/%3E%3Ctext x='75' y='30' text-anchor='middle' fill='white' font-size='16' font-weight='bold'%3EGIDROLOCK%3C/text%3E%3C/svg%3E" alt="GIDROLOCK" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="main-menu">
+                    <li><a href="/">Начало</a></li>
+                    <li><a href="/produkti-gidrolock/">Продукти</a></li>
+                    <li><a href="/kontakti/">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Хедър с голямо заглавие -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Система за защита от протичане на вода GIDROLOCK</h1>
         </div>
     </header>
 
-    <!-- Главна секция със син фон -->
-    <section class="hero-section">
+    <!-- Голяма синя секция с основното съобщение -->
+    <section class="hero-blue-section">
         <div class="container">
-            <h2>ИНОВАТИВНИ СГРАДНИ СИСТЕМИ ЗА ЗАЩИТА ОТ НАВОДНЕНИЯ. GIDROLOCK ЩЕ ПРЕДОТВРАТИ НАВОДНЕНИЕТО ВЪВ ВАШИЯ ДОМ И СЪСЕД!</h2>
+            <h2 class="main-message">ИНОВАТИВНИ СГРАДНИ СИСТЕМИ ЗА ЗАЩИТА ОТ НАВОДНЕНИЯ. GIDROLOCK ЩЕ ПРЕДОТВРАТИ НАВОДНЕНИЕТО ВЪВ ВАШИЯ ДОМ И СЪСЕД!</h2>
         </div>
     </section>
 
-    <!-- Профилактика на климатици -->
-    <section class="service-section ac-service">
+    <!-- Секция с промоции -->
+    <section class="promo-section ac-promo">
         <div class="container">
-            <h3>Профилактика на климатици</h3>
-            <p class="price">от 50 лева</p>
-            <p>Професионално почистване на климатици чрез машинно почистване с разглобяване на климатик, почистване с пара, дезинфекция от бактерии, гъбички и вируси, промоция във връзка с подготовката за летния сезон, диагностика безплатно.</p>
-            <p class="guarantee">Гаранция за свършената работа!</p>
+            <div class="promo-box">
+                <h3>Профилактика на климатици</h3>
+                <div class="price-tag">от 50 лева</div>
+                <p class="promo-description">
+                    Професионално почистване на климатици чрез машинно почистване с разглобяване на климатик, 
+                    почистване с пара, дезинфекция от бактерии, гъбички и вируси, промоция във връзка с подготовката 
+                    за летния сезон, диагностика безплатно.
+                </p>
+                <div class="guarantee-badge">Гаранция за свършената работа!</div>
+            </div>
         </div>
     </section>
 
-    <!-- Монтаж на термопомпа -->
-    <section class="service-section heat-pump">
+    <!-- Втора промоция -->
+    <section class="promo-section heat-pump-promo">
         <div class="container">
-            <h3>Монтаж на термопомпа</h3>
-            <p>Монтаж на цялата отоплителна система с термопомпа, радиатори, подово отопление от нулата</p>
-            <p>Свързване на термопомпа към съществуващата отоплителна система от радиатори и/или подово отопление</p>
-            <p class="promo">ПРОМОЦИЯ !</p>
+            <div class="promo-box">
+                <h3>Монтаж на термопомпа</h3>
+                <p class="promo-description">
+                    Монтаж на цялата отоплителна система с термопомпа, радиатори, подово отопление от нулата<br>
+                    Свързване на термопомпа към съществуващата отоплителна система от радиатори и/или подово отопление
+                </p>
+                <div class="promo-badge">ПРОМОЦИЯ !</div>
+            </div>
         </div>
     </section>
 
-    <!-- Наводнението - ужасна катастрофа -->
-    <section class="flood-section">
+    <!-- Голяма секция за последиците от наводнение -->
+    <section class="consequences-section">
         <div class="container">
-            <h2>Наводнението, ужасна катастрофа за Вас и дома Ви, нали? Gidrolock ще Ви спести:</h2>
+            <h2 class="section-title-red">
+                Наводнението, ужасна катастрофа за Вас и дома Ви, нали? Gidrolock ще Ви спести:
+            </h2>
             
-            <div class="flood-grid">
-                <div class="flood-item">
+            <div class="consequences-grid">
+                <div class="consequence-card">
                     <h3>Време</h3>
                     <p>Ще се наложи да издирвате виновника и оценявате щетите. Често се стига и до съд, а всичко това краде от времето Ви.</p>
                 </div>
                 
-                <div class="flood-item">
+                <div class="consequence-card">
                     <h3>Пари</h3>
                     <p>Ремонтът на дома след поведение е скъпо удоволствие, нали? А ако Вие сте виновника и сте наводнили още 2 или 3 етажа?</p>
                 </div>
                 
-                <div class="flood-item">
+                <div class="consequence-card">
                     <h3>Нерви</h3>
                     <p>Цялата бъркотия около наводнението ще опъне нервите Ви и задълго ще развали настроението Ви. Нали не желаете това?</p>
                 </div>
                 
-                <div class="flood-item">
+                <div class="consequence-card">
                     <h3>Мебели</h3>
                     <p>Може да се наложи да купите нови фотьойли, маси и столове, шкафове и кухненски гарнитури.</p>
                 </div>
                 
-                <div class="flood-item">
+                <div class="consequence-card">
                     <h3>Декорация</h3>
                     <p>Със сигурност ще се наложи да подмените ламината, дюшемето и паркета, а също и цокъла, и тапетите.</p>
                 </div>
                 
-                <div class="flood-item">
+                <div class="consequence-card">
                     <h3>Техника</h3>
                     <p>Електрониката Ви, в това число телевизора, настолния компютър, хладилника, съдомиялната и друга техника – ще оцелеят ли след наводнение?</p>
                 </div>
@@ -80,48 +111,50 @@
         </div>
     </section>
 
-    <!-- Какво предизвиква наводнението -->
+    <!-- Причини за наводнение -->
     <section class="causes-section">
         <div class="container">
-            <h2>Какво предизвиква наводнението?</h2>
-            <div class="causes-list">
-                <div class="cause-item">Нарушаване на гъвкавата връзка</div>
-                <div class="cause-item">Човешкият фактор</div>
-                <div class="cause-item">Протичащи тръби</div>
-                <div class="cause-item">Спукани кранове</div>
+            <h2 class="section-title">Какво предизвиква наводнението?</h2>
+            <div class="causes-container">
+                <div class="cause-box">Нарушаване на гъвкавата връзка</div>
+                <div class="cause-box">Човешкият фактор</div>
+                <div class="cause-box">Протичащи тръби</div>
+                <div class="cause-box">Спукани кранове</div>
             </div>
-            <p class="warning">Никой не е застрахован от аварии. С времето даже и най-качествената санитарна техника, кранове и тръби могат да станат причина за наводнение във всеки един момент.</p>
+            <p class="warning-text">
+                Никой не е застрахован от аварии. С времето даже и най-качествената санитарна техника, кранове и тръби могат да станат причина за наводнение във всеки един момент.
+            </p>
         </div>
     </section>
 
-    <!-- Системата GIDROLOCK -->
-    <section class="system-title-section">
+    <!-- Голяма системна секция -->
+    <section class="system-main-section">
         <div class="container">
-            <h2>Системата за защита от протичане на вода</h2>
-            <h1>GIDROLOCK</h1>
-            <h2>ЩЕ ПРЕДОТВРАТИ НАВОДНЕНИЕТО ВЪВ ВАШИЯ ДОМ И ЩЕ СЪХРАНИ ВАШЕТО ВРЕМЕ, ПАРИ И НЕРВИ!</h2>
+            <h2 class="system-subtitle">Системата за защита от протичане на вода</h2>
+            <h1 class="system-title">GIDROLOCK</h1>
+            <h2 class="system-subtitle">ЩЕ ПРЕДОТВРАТИ НАВОДНЕНИЕТО ВЪВ ВАШИЯ ДОМ И ЩЕ СЪХРАНИ ВАШЕТО ВРЕМЕ, ПАРИ И НЕРВИ!</h2>
         </div>
     </section>
 
     <!-- Как работи -->
-    <section class="how-it-works-section">
+    <section class="how-it-works">
         <div class="container">
-            <h2>Как работи системата GIDROLOCK ?</h2>
-            <div class="work-steps">
-                <div class="step">
+            <h2 class="section-title">Как работи системата GIDROLOCK ?</h2>
+            <div class="steps-container">
+                <div class="step-box">
                     <p>При поява на теч, водата попада върху датчиците за протичане на вода</p>
-                    <p class="step-note">(WSP – датчик с кабел или WSR – безжичен датчик)</p>
+                    <p class="step-detail">(WSP – датчик с кабел или WSR – безжичен датчик)</p>
                 </div>
                 
-                <div class="step">
+                <div class="step-box">
                     <p>Датчикът за протичане на вода (WSP – кабелен или WSR – безжичен) подава сигнал на блока за управление GIDROLOCK PREMIUM</p>
                 </div>
                 
-                <div class="step">
+                <div class="step-box">
                     <p>Блокът за управление GIDROLOCK PREMIUM подава команда до сферичния електрически задвижващ механизъм (СЕЗМ)</p>
                 </div>
                 
-                <div class="step">
+                <div class="step-box">
                     <p>Сферичният, електрически задвижващ механизъм (СЕЗМ) прекратява подаването на водата и се включва звукова сигнализация</p>
                 </div>
             </div>
@@ -131,38 +164,41 @@
     <!-- Схема -->
     <section class="scheme-section">
         <div class="container">
-            <h2>Схема на разположение на оборудването GIDROLOCK</h2>
+            <h2 class="section-title">Схема на разположение на оборудването GIDROLOCK</h2>
+            <div class="scheme-placeholder">
+                [Тук се намира схемата на оборудването]
+            </div>
         </div>
     </section>
 
     <!-- Контакт с експерт -->
-    <section class="expert-section">
+    <section class="expert-contact-section">
         <div class="container">
-            <h2>Имате още въпроси? Свържете се с експерт!</h2>
-            <p>Позвънете веднага на <strong>+359 878 80 7227</strong> за безплатна консултация!</p>
+            <h2 class="section-title">Имате още въпроси? Свържете се с експерт!</h2>
+            <p class="contact-call">Позвънете веднага на <strong>+359 878 80 7227</strong> за безплатна консултация!</p>
         </div>
     </section>
 
     <!-- Преимущества -->
-    <section class="benefits-section">
+    <section class="benefits-main-section">
         <div class="container">
-            <h2>Преимущества на GIDROLOCK</h2>
+            <h2 class="section-title">Преимущества на GIDROLOCK</h2>
             <div class="benefits-list">
-                <div class="benefit">SMS-известяване за авария</div>
-                <div class="benefit">Акумулаторни батерии с голям капацитет</div>
-                <div class="benefit">Безопасност при експлоатация</div>
-                <div class="benefit">Херметичен корпус на електрическия задвижващ механизъм IP 64</div>
-                <div class="benefit">Качествени кранове Bugatti (Италия)</div>
-                <div class="benefit">Мощни и надеждни електрически задвижващи механизми</div>
-                <div class="benefit">Ниско потребление на енергия</div>
-                <div class="benefit">Златно покритие на електродите на датчика</div>
-                <div class="benefit">Простота при монтажа и експлоатацията</div>
-                <div class="benefit">Простота при монтажа на сферичния електрически задвижващ механизъм</div>
-                <div class="benefit">Универсалност на системата</div>
-                <div class="benefit">Функция автоматичен контрол на нивото на заряда на акумулаторната батерия</div>
-                <div class="benefit">Функция автоматичен контрол на нивото на заряда на радиодатчиците</div>
-                <div class="benefit">Функция ръчно затваряне/ отваряне на подаването на вода</div>
-                <div class="benefit">Функция самопочистване от "окисляване"</div>
+                <div class="benefit-item">SMS-известяване за авария</div>
+                <div class="benefit-item">Акумулаторни батерии с голям капацитет</div>
+                <div class="benefit-item">Безопасност при експлоатация</div>
+                <div class="benefit-item">Херметичен корпус на електрическия задвижващ механизъм IP 64</div>
+                <div class="benefit-item">Качествени кранове Bugatti (Италия)</div>
+                <div class="benefit-item">Мощни и надеждни електрически задвижващи механизми</div>
+                <div class="benefit-item">Ниско потребление на енергия</div>
+                <div class="benefit-item">Златно покритие на електродите на датчика</div>
+                <div class="benefit-item">Простота при монтажа и експлоатацията</div>
+                <div class="benefit-item">Простота при монтажа на сферичния електрически задвижващ механизъм</div>
+                <div class="benefit-item">Универсалност на системата</div>
+                <div class="benefit-item">Функция автоматичен контрол на нивото на заряда на акумулаторната батерия</div>
+                <div class="benefit-item">Функция автоматичен контрол на нивото на заряда на радиодатчиците</div>
+                <div class="benefit-item">Функция ръчно затваряне/ отваряне на подаването на вода</div>
+                <div class="benefit-item">Функция самопочистване от "окисляване"</div>
             </div>
         </div>
     </section>
@@ -170,8 +206,8 @@
     <!-- Цени -->
     <section class="pricing-section">
         <div class="container">
-            <h2>Колко струва системата GIDROLOCK ?</h2>
-            <div class="pricing-text">
+            <h2 class="section-title">Колко струва системата GIDROLOCK ?</h2>
+            <div class="pricing-content">
                 <p>Тези, които вече са се сблъскали с последици от наводняване, на първо място се замислят за защита на жилището си и еднозначно разбират необходимостта и ползата от монтиране на система за защита от протичане на вода.</p>
                 
                 <p>Хората, чието жилище никога не се е наводнявало, могат да направят сравнение между стойността на системата – която е в пъти по-малка, отколкото средната стойност на ремонт след наводнение из цялата страна.</p>
@@ -181,20 +217,20 @@
         </div>
     </section>
 
-    <!-- Най-популярни комплекти -->
+    <!-- Популярни комплекти -->
     <section class="popular-section">
         <div class="container">
-            <h2>Най-популярните готови комплекти</h2>
-            <p>Доставка в цялата страна!</p>
-            <p>Доставка в цялата страна!</p>
+            <h2 class="section-title">Най-популярните готови комплекти</h2>
+            <p class="delivery-text">Доставка в цялата страна!</p>
+            <p class="delivery-text">Доставка в цялата страна!</p>
         </div>
     </section>
 
     <!-- Поръчка -->
     <section class="order-section">
         <div class="container">
-            <h2>Заявете Вашия GIDROLOCK още ДНЕС!</h2>
-            <div class="order-list">
+            <h2 class="section-title">Заявете Вашия GIDROLOCK още ДНЕС!</h2>
+            <div class="order-benefits">
                 <p>• Бърза и лесна поръчка – възможна е доставка в деня на поръчване.</p>
                 <p>• Професионална консултация от специалист</p>
                 <p>• Монтаж и настройка на оборудването</p>
@@ -205,34 +241,31 @@
     </section>
 
     <!-- Професионален избор -->
-    <section class="professional-section">
+    <section class="professional-choice-section">
         <div class="container">
-            <h2>GIDROLOCK – избор на професионалисти!!</h2>
-            <p>Експерти и авторитетни организации Ви препоръчват GIDROLOCK</p>
+            <h2 class="section-title">GIDROLOCK – избор на професионалисти!!</h2>
+            <p class="professional-text">Експерти и авторитетни организации Ви препоръчват GIDROLOCK</p>
         </div>
     </section>
 
-    <!-- Технически данни -->
+    <!-- Технически спецификации -->
     <section class="tech-specs-section">
         <div class="container">
-            <h2>GIDROLOCK – това е:</h2>
-            <div class="specs-comparison">
-                <div class="spec-group">
+            <h2 class="section-title">GIDROLOCK – това е:</h2>
+            <div class="specs-container">
+                <div class="spec-item">
                     <h3>Мощни електродвигатели</h3>
                     <p>Въртящ момент до 35 Н*м</p>
                 </div>
-                
-                <div class="spec-group">
+                <div class="spec-item">
                     <h3>Качествени сферични кранове</h3>
                     <p>Bugatti/Enolgas (Италия)</p>
                 </div>
-                
-                <div class="spec-group">
+                <div class="spec-item">
                     <h3>Редуктор на електродвигателя</h3>
                     <p>Изцяло изработен от метал</p>
                 </div>
-                
-                <div class="spec-group">
+                <div class="spec-item">
                     <h3>Акумулатори с голям капацитет</h3>
                     <p>1,3 А*ч</p>
                 </div>
@@ -240,16 +273,20 @@
             
             <div class="comparison-table">
                 <table>
-                    <tr>
-                        <th></th>
-                        <th>Ultimate</th>
-                        <th>Professional</th>
-                    </tr>
-                    <tr>
-                        <td>Въртящ момент</td>
-                        <td>10 Нм (100 кг*см)</td>
-                        <td>35 Нм (350 кг*см)</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Ultimate</th>
+                            <th>Professional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Въртящ момент</td>
+                            <td>10 Нм (100 кг*см)</td>
+                            <td>35 Нм (350 кг*см)</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -258,15 +295,16 @@
     <!-- Надеждност -->
     <section class="reliability-section">
         <div class="container">
-            <h2>GIDROLOCK – това е надеждност!</h2>
+            <h2 class="section-title">GIDROLOCK – това е надеждност!</h2>
         </div>
     </section>
 
     <!-- Футър -->
-    <footer class="site-footer">
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; Copyrights gidrolock.bg 2017. All rights reserved.</p>
+            <p class="copyright">&copy; Copyrights gidrolock.bg 2017. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
